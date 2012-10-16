@@ -1,0 +1,18 @@
+menuconfig CUSTOM_FEATURES
+	tristate "Enable the custom features"
+	---help---
+	Enable the custom features
+
+
+if CUSTOM_FEATURES
+
+config MANUAL_PANIC
+	tristate "Automatically fire a kernel panic !"
+	---help---
+	This is only made to test the custom panic handler
+
+endif
+
+
+
+
