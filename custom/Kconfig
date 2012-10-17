@@ -11,6 +11,11 @@ config MANUAL_PANIC
 	---help---
 	This is only made to test the custom panic handler
 
+config MY_PANIC
+	tristate "Custom panic handler"
+	---help---
+	Enable the custom panic handler that will be called when a panic occure
+
 endif
 
 
